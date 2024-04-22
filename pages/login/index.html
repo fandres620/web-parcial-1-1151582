@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Sweet Alert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body class="bg-light">
+    
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="col-md-3">
+            <form id="loginForm">
+
+                <img src="../../img/logo.jpg" alt="Logo" class="img-fluid d-block mx-auto my-3" style="max-width: 300px;">
+    
+                <div class="form-group">
+                    <h2 class="text-center mb-2" style="font-size: 14px;">Código estudiante</h2>
+                    <input id="username" type="text" class="form-control" style="font-size: 16px;" required value="1151582">
+                </div>
+    
+                <div class="form-group">
+                    <h2 class="text-center mb-2" style="font-size: 14px;">Password</h2>
+                    <input id="password" type="password" class="form-control" style="font-size: 16px;" required value="mG6uTn">
+                </div>
+    
+                <div class="form-group">
+                    <div class="form-group">
+                        <input type="button" value="Ingresar" class="btn btn-primary btn-block" 
+                            onclick="enviarDatos()"
+                            style="background-color: #D31024; color: white; font-size: 16px; height: 32px; width: 100%; border: none; border-radius: 0 0 0 20px;">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</html>
